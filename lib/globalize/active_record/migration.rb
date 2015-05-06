@@ -96,7 +96,8 @@ module Globalize
           connection.add_index(
             translations_table_name,
             :locale,
-            :name => translation_locale_index_name
+            :name => translation_locale_index_name,
+            length: 191
           )
         end
 
